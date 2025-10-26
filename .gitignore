@@ -1,0 +1,111 @@
+# =====================
+# Python / FastAPI
+# =====================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.cache/
+
+# FastAPI / Uvicorn logs
+*.log
+logs/
+*.db-journal
+
+# SQLite databases (optional)
+*.sqlite3
+*.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Alembic migrations cache
+alembic/versions/__pycache__/
+alembic/versions/*.pyc
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+docker-compose.override.yml
+.docker/
+docker-data/
+
+# Local scripts or dev-only files
+scripts/
+local_settings.py
+
+# MyPy / type checker
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Pyright / Pylance
+typings/
+.pyright/
+
+# Ruff / Black / isort cache
+.ruff_cache/
+.black/
+.isort.cfg
