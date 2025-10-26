@@ -1,20 +1,13 @@
-from contextlib import asynccontextmanager
 from fastapi import Depends, FastAPI, HTTPException, Path
 from sqlmodel import Session, select
 
 from typing import Annotated, Sequence
 
-from db import get_session, init_db
+from db import get_session
 from models import Band, BandCreate, Album, GenreChoices
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    init_db()
-    yield
-
-
-app = FastAPI(lifespan=lifespan)
+app = FastAPI()
 
 
 @app.get("/bands", name="Get All Bands")
