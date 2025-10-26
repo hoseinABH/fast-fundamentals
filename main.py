@@ -3,6 +3,8 @@ from sqlmodel import Session, select
 
 from typing import Annotated, Sequence
 
+from datetime import date
+
 from db import get_session
 from models import Band, BandCreate, Album, GenreChoices
 
@@ -46,7 +48,7 @@ async def getBand(
 async def create_band(
     band_data: BandCreate, session: Session = Depends(get_session)
 ) -> Band:
-    band = Band(name=band_data.name, genre=band_data.genre)
+    band = Band(name=band_data.name, genre=band_data.genre, date_formed=date.today())
     session.add(band)
 
     if band_data.albums:
